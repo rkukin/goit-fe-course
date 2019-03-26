@@ -63,7 +63,7 @@ article {
 }
 
 article:nth-last-of-type(-n+2) {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 img {
@@ -92,7 +92,7 @@ h2 {
 }
 
 p {
-  margin-top: 34px;
+  margin-top: 32px;
   margin-bottom: 0;
   color: #626262;
   font-family: "Playfair Display", sans-serif;
@@ -116,5 +116,6 @@ button {
   line-height: 24px;
   background: transparent;
   text-align: center;
-  margin: 50px auto 70px;
+  padding:0;
+  margin: 0 auto 70px;
 }
