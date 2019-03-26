@@ -1,0 +1,99 @@
+div.content {
+  width: 900px;
+  text-align: center;
+  margin: auto;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+  margin: 78px 0 auto;
+  list-style: none;
+  box-sizing: content-box
+}
+
+li {
+  display: inline-block;
+  margin-right: 106px;
+  color: #626262;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li:hover, button:hover {
+  color: #03a9f4;
+  cursor: pointer;
+  border-color: #03a9f4;
+}
+
+div.row {
+  margin: 92px 0 136px 0;
+  overflow: hidden;
+}
+
+div.article {
+  width: 420px;
+  display: inline-block;
+  text-align: left;
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+
+h6 {
+  color: #b4ad9e;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: inline;
+  width: 407px;
+  height: 30px;
+  color: #626262;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 34px;
+  margin-bottom: 0;
+  color: #626262;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+button {
+  width: 164px;
+  height: 60px;
+  border: 1px solid #626262;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  background: transparent;
+}
+
+div.button {
+  margin-top: -84px;
+  margin-bottom: 70px;
+}
