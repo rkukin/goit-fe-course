@@ -1,33 +1,36 @@
-div.content {
+div.wrapper {
   width: 900px;
   text-align: center;
   margin: auto;
 }
 
 ul {
-  text-align: center;
   padding: 0;
   margin: 78px 0 auto;
   list-style: none;
-  box-sizing: content-box
 }
 
 li {
   display: inline-block;
   margin-right: 106px;
-  color: #626262;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
 }
 
 li:last-child {
   margin-right: 0;
 }
 
-li:hover, button:hover {
+a {
+  color: #626262;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
   color: #03a9f4;
   cursor: pointer;
   border-color: #03a9f4;
@@ -39,23 +42,24 @@ div.row {
   height: auto;
 }
 
-div.article {
+article {
   width: 420px;
   display: inline-block;
   text-align: left;
   float: left;
 }
 
-div.right {
+section article:nth-child(2n) {
   float: right;
 }
 
-h6 {
+h3 {
   color: #b4ad9e;
   font-family: Ubuntu;
   font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 28px 0;
 }
 
 h2 {
@@ -82,7 +86,7 @@ p {
   -webkit-box-orient: vertical;
 }
 
-div.last {
+section div.row:last-of-type {
   margin: 0;
 }
 
@@ -91,14 +95,11 @@ button {
   height: 60px;
   border: 1px solid #626262;
   color: #626262;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   background: transparent;
-}
-
-div.button {
-  margin-top: 54px;
-  margin-bottom: 70px;
+  text-align: center;
+  margin: 54px auto 70px;
 }
