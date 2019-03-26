@@ -36,6 +36,7 @@ li:hover, button:hover {
 div.row {
   margin: 92px 0 136px 0;
   overflow: hidden;
+  height: auto;
 }
 
 div.article {
@@ -81,6 +82,10 @@ p {
   -webkit-box-orient: vertical;
 }
 
+div.last {
+  margin: 0;
+}
+
 button {
   width: 164px;
   height: 60px;
@@ -94,6 +99,6 @@ button {
 }
 
 div.button {
-  margin-top: -84px;
+  margin-top: 54px;
   margin-bottom: 70px;
 }
