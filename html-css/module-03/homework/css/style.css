@@ -1,7 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 div.wrapper {
   width: 900px;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 ul {
@@ -12,11 +18,10 @@ ul {
 
 li {
   display: inline-block;
-  margin-right: 106px;
 }
 
-li:last-child {
-  margin-right: 0;
+li:not(:last-child) {
+  margin-right: 106px;
 }
 
 a {
@@ -36,21 +41,35 @@ button:hover {
   border-color: #03a9f4;
 }
 
-div.row {
-  margin: 92px 0 136px 0;
-  overflow: hidden;
-  height: auto;
+header {
+  margin-bottom: 104px;
 }
 
+section {
+  font-size: 0;
+}
 article {
   width: 420px;
   display: inline-block;
   text-align: left;
-  float: left;
 }
 
-section article:nth-child(2n) {
-  float: right;
+article:not(:nth-child(2n)) {
+  margin-right: 60px;
+}
+
+article {
+  margin-bottom: 132px;
+}
+
+article:nth-last-of-type(-n+2) {
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h3 {
@@ -59,7 +78,7 @@ h3 {
   font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 28px 0;
+  margin: 32px 0 28px 0;
 }
 
 h2 {
@@ -86,10 +105,6 @@ p {
   -webkit-box-orient: vertical;
 }
 
-section div.row:last-of-type {
-  margin: 0;
-}
-
 button {
   width: 164px;
   height: 60px;
@@ -101,5 +116,5 @@ button {
   line-height: 24px;
   background: transparent;
   text-align: center;
-  margin: 54px auto 70px;
+  margin: 50px auto 70px;
 }
