@@ -24,6 +24,12 @@ body {
   clear: both;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 header {
   padding-top: 38px;
   margin-bottom: 104px;
@@ -64,8 +70,6 @@ header {
 }
 
 .logo {
-  margin: 0;
-  padding: 0;
   font-family: Roboto;
   font-size: 30px;
   line-height: 32px;
