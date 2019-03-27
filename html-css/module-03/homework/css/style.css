@@ -89,14 +89,11 @@ header {
   font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  /* margin: 32px 0 28px 0; */
 }
 
 .article-title {
   margin: 0;
-  display: inline;
-  width: 407px;
-  height: 30px;
+  margin-bottom: 32px;
   color: #626262;
   font-family: "Playfair Display", sans-serif;
   font-size: 30px;
@@ -105,7 +102,6 @@ header {
 
 .article-text {
   margin: 0;
-  margin-top: 32px;
   color: #626262;
   font-family: "Playfair Display", sans-serif;
   font-size: 14px;
