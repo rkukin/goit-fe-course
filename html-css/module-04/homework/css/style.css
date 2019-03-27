@@ -58,6 +58,11 @@ header {
   color: black;
 }
 
+.menu-item-link:hover,
+.menu-item-link:focus {
+  color: #1abc9c;
+}
+
 .logo {
   margin: 0;
   padding: 0;
@@ -71,6 +76,13 @@ header {
   letter-spacing: -0.6px;
 }
 
+.logo::first-letter {
+  color: #1abc9c;
+  font-family: "Roboto - Black";
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+
 .section-title {
   margin: 0;
   padding: 0;
@@ -81,7 +93,17 @@ header {
   line-height: 32px;
   text-transform: uppercase;
   letter-spacing: -0.96px;
-  margin-bottom: 130px;
+  padding-bottom: 92px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 164px;
+  background-color: #1abc9c;
+  margin: 32px auto 0;
+
 }
 
 .products-container {
@@ -102,4 +124,8 @@ header {
 
 .product-tile:nth-last-child(-n+4) {
   margin-bottom: 0;
+}
+
+.featured-products {
+  margin-bottom: 105px;
 }
