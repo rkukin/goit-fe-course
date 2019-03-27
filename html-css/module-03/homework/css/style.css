@@ -1,5 +1,5 @@
-*,
-*::before,
+*, 
+*::before, 
 *::after {
   box-sizing: inherit;
 }
@@ -32,10 +32,13 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
 }
 
-a:hover,
-button:hover {
+a:hover, 
+button:hover, 
+a:focus, 
+button:focus {
   color: #03a9f4;
   cursor: pointer;
   border-color: #03a9f4;
