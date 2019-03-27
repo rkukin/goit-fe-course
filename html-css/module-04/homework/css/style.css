@@ -1,0 +1,16 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.wrapper {
+  width: 1110px;
+  text-align: center;
+  margin: 0 auto;
+}
