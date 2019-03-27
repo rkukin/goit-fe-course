@@ -1,0 +1,67 @@
+/* Задание 1 */
+.task1-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto; 
+  overflow: hidden;
+}
+
+.task1-list-itm {
+  float: left;
+}
+
+.task1-list-itm:not(:last-child) {
+  margin-right: 30px;
+}
+
+.task1-link {
+  display: block;
+  text-decoration: none;
+}
+
+.task1-link:hover {
+  background-color: teal;
+}
+
+/* Задание 2 */
+.task2-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 150px;
+  text-align: center;
+}
+
+.task2-link {
+  text-decoration: none;
+  color: #0E1116;
+}
+
+.task2-list-itm:nth-child(-n+3){
+  background-color: #88292F;
+}
+
+/* .task2-list-itm:not(:nth-child(-n+3)):not(:nth-last-child(-n+3)) */
+.task2-list-itm:nth-child(n+4):nth-child(-n+6)
+/* .task2-list-itm:nth-last-child(-n+6) */
+{
+  background-color: #5DB7DE;
+}
+
+.task2-list-itm:nth-last-child(-n+3){
+  background-color: #0D5D56;
+}
+
+/* Задание 3 */
+.task3-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.task3-list-itm::before {
+  span {
+    content: "\2192";
+  }
+}
