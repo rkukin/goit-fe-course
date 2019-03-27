@@ -4,28 +4,28 @@
   box-sizing: inherit;
 }
 
-div.wrapper {
+.wrapper {
   width: 900px;
   text-align: center;
   margin: 0 auto;
 }
 
-ul {
+.main-menu {
   padding: 0;
   margin: 0 auto;
   list-style: none;
   font-size: 0;
 }
 
-li {
+.menu-item {
   display: inline-block;
 }
 
-li:not(:last-child) {
+.menu-item:not(:last-child) {
   margin-right: 106px;
 }
 
-a {
+.menu-item-link {
   color: #626262;
   font-family: "Playfair Display", sans-serif;
   font-size: 14px;
@@ -36,10 +36,10 @@ a {
   display: block;
 }
 
-a:hover, 
-button:hover, 
-a:focus, 
-button:focus {
+.menu-item-link:hover, 
+.load-more-button:hover, 
+.menu-item-link:focus, 
+.load-more-button:focus {
   color: #03a9f4;
   cursor: pointer;
   border-color: #03a9f4;
@@ -50,46 +50,49 @@ header {
   margin-bottom: 104px;
 }
 
-section {
+.articles {
   font-size: 0;
   padding-bottom: 70px;
 }
 
-article {
+.article-tile {
   width: 420px;
   display: inline-block;
   text-align: left;
 }
 
-article:not(:nth-child(2n)) {
+.article-tile:not(:nth-child(2n)) {
   margin-right: 60px;
 }
 
-article {
+.article-tile {
   margin-bottom: 132px;
 }
 
-article:nth-last-of-type(-n+2) {
+.article-tile:nth-last-of-type(-n+2) {
   margin-bottom: 50px;
 }
 
-img {
+.article-img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
-h3 {
+.article-category {
   margin: 0;
+  margin-bottom: 28px;
   color: #b4ad9e;
   font-family: Ubuntu;
   font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 32px 0 28px 0;
+  /* margin: 32px 0 28px 0; */
 }
 
-h2 {
+.article-title {
   margin: 0;
   display: inline;
   width: 407px;
@@ -100,7 +103,7 @@ h2 {
   font-weight: 400;
 }
 
-p {
+.article-text {
   margin: 0;
   margin-top: 32px;
   color: #626262;
@@ -114,7 +117,7 @@ p {
   -webkit-box-orient: vertical;
 }
 
-button {
+.load-more-button {
   width: 164px;
   height: 60px;
   border: 1px solid #626262;
