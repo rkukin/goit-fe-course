@@ -196,7 +196,7 @@ h3 {
   margin-right: 30px;
 }
 
-.news-image {
+.news-img {
   margin-bottom: 10px;
 }
 
@@ -253,6 +253,7 @@ h3 {
   letter-spacing: -0.32px;
   border-radius: 3px;
   border: #4ec6ab;
+  float: left;
 }
 
 section {
