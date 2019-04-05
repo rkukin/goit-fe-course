@@ -1,9 +1,10 @@
 /* Задание 1 */
+
 .task1-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: auto; 
+  height: auto;
   overflow: hidden;
 }
 
@@ -25,6 +26,7 @@
 }
 
 /* Задание 2 */
+
 .task2-list {
   list-style: none;
   margin: 0 auto;
@@ -38,22 +40,25 @@
   color: #0E1116;
 }
 
-.task2-list-itm:nth-child(-n+3){
+.task2-list-itm:nth-child(-n+3) {
   background-color: #88292F;
 }
 
 /* .task2-list-itm:not(:nth-child(-n+3)):not(:nth-last-child(-n+3)) */
+
 .task2-list-itm:nth-child(n+4):nth-child(-n+6)
 /* .task2-list-itm:nth-last-child(-n+6) */
-{
+
+  {
   background-color: #5DB7DE;
 }
 
-.task2-list-itm:nth-last-child(-n+3){
+.task2-list-itm:nth-last-child(-n+3) {
   background-color: #0D5D56;
 }
 
 /* Задание 3 */
+
 .task3-list {
   list-style: none;
   margin: 0 auto;
@@ -61,7 +66,32 @@
 }
 
 .task3-list-itm::before {
-  span {
-    content: "\2192";
-  }
+  content: "\2192";
+  vertical-align: middle;
+}
+
+/* Задание 4 */
+
+body {
+  counter-reset: count-li;
+}
+
+.task4-list-itm {
+  counter-increment: count-li;
+}
+
+.task4-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.task4-list-itm {
+  margin-bottom: 10px;
+}
+
+.task4-list-itm::before {
+  content: counter(count-li, upper-roman);
+  margin-right: 10px;
 }
