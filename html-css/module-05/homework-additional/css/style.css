@@ -1,7 +1,145 @@
+
+/* Task 1 */
 .container {
   width: 600px;
   height: 400px;
-  background-image: url("../img/image1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/image1.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+
+/* Task 2 */
+
+.parent {
+  position: relative;
+  background-color: #424242;
+  width: 400px;
+  height: 400px;
+}
+
+.child {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.child1, .child9 {
+  background-color: aquamarine;
+}
+
+.child2, .child8 {
+  background-color: palevioletred;
+}
+
+.child3, .child7 {
+  background-color: palegreen;
+}
+
+.child4, .child6 {
+  background-color: burlywood;
+}
+
+.child5 {
+  background-color: darkturquoise
+}
+
+.child9 {
+  right: 0;
+  bottom: 0;
+}
+
+.child8 {
+  bottom: 0;
+  left: 150px;
+}
+
+.child7 {
+  bottom: 0;
+  left: 0;
+}
+
+.child6 {
+  right: 0;
+  top: 150px;
+}
+
+.child5 {
+  left: 150px;
+  top: 150px;
+}
+
+.child4 {
+  left: 0;
+  top: 150px;
+}
+
+.child3 {
+  right: 0;
+  top: 0;
+
+}
+
+.child2 {
+  left: 150px;
+  top: 0;
+}
+
+.wrapper {
+  width: 1024px;
+  height: 300px;
+  background-image: linear-gradient(teal, aqua);
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+  .menu-item {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-item > a,
+.submenu-item > a {
+  display: inline-block;
+  padding: 15px 30px; 
+  color: #424242;
+  background-color: #fff;
+  text-decoration: none;
+  
+}
+
+.menu-item > a:hover,
+.submenu-item > a:hover{
+  background: #E91E63;
+  color: #ffffff;
+}
+
+.submenu {
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+.submenu-item {
+  white-space: nowrap;
 }
