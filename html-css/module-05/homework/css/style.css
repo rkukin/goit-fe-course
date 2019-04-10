@@ -328,6 +328,11 @@ bottom: 0;
   text-decoration: none;
 }
 
+.footer {
+  background-color: #323232;
+}
+
+
 .copyrights, .developed-by {
 color: #fefefe;
 font-family: "Open Sans";
