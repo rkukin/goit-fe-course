@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+a {
+  display: block;
+}
+
 ul {
   list-style: none;
 }
@@ -55,7 +59,6 @@ header {
 .menu-item {
   float: left;
   vertical-align: middle;
-  margin-top: 6px;
 }
 
 .menu-item:not(:last-of-type) {
@@ -135,7 +138,7 @@ letter-spacing: -0.6px;
   z-index: 1;
 }
 
-.slider-ctrl:hover {
+button:hover {
   cursor: pointer;
 }
 
@@ -260,7 +263,7 @@ bottom: 0;
 .overlay {
   width: 235px;
   height: 260px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 10px;
   left: 10px;
@@ -268,7 +271,7 @@ bottom: 0;
 }
 
 .content-tile:hover > .overlay {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .overlay-button {
@@ -282,6 +285,7 @@ bottom: 0;
   background-repeat: no-repeat;
   background-size: contein;
   background-position: center;
+  background-color: transparent;
 }
 
 .overlay-button:hover {
@@ -343,6 +347,5 @@ letter-spacing: -0.32px;
 }
 
 .developed-by {
-text-decoration: none;
 color: #46bfa9; 
 }
