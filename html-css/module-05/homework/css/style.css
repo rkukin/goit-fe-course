@@ -19,9 +19,10 @@ header a {
   text-decoration: none;
 }
 
-body {
-  width: 1600px;
+.wrapper {
+  width: 1140px;
   text-align: center;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -45,7 +46,7 @@ header {
 .logo {
   float: left;
   position: relative;
-  left: 245px;
+  left: 0;
 }
 
 .main-menu {
@@ -53,7 +54,7 @@ header {
   padding: 0;
   float: right;
   position: relative;
-  right: 245px;
+  right: 0;
 }
 
 .menu-item {
@@ -118,7 +119,7 @@ letter-spacing: -0.6px;
 }
 
 .slider {
-  width: 1600px;
+  width: 1140px;
   height: 600px;
   margin: auto;
   position: relative;
@@ -150,11 +151,11 @@ button:hover {
 
 .prev {
   background-image: url("../img/prev.png");
-  left: 245px;
+  left: 0;
 }
 
 .next {
-  right: 245px;
+  right: 0;
   background-image: url("../img/next.png");
 }
 
@@ -163,6 +164,7 @@ button:hover {
 }
 
 .slide-copy {
+  width: 730px;
   margin: 0;
   padding: 0;
   position: absolute;
