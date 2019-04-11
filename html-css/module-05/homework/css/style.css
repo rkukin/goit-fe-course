@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   font-size: 0;
   margin: 0;
@@ -22,7 +20,6 @@ header a {
 .wrapper {
   width: 1140px;
   text-align: center;
-  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -75,25 +72,24 @@ header {
   color: black;
 }
 
-.menu-item-link:hover,
-.menu-item-link:focus {
+.menu-item-link:hover, .menu-item-link:focus {
   color: #1abc9c;
 }
 
 .logo {
   color: #555252;
-font-family: Roboto;
-font-size: 30px;
-font-weight: 300;
-line-height: 32px;
-text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
 }
 
 .logo::first-letter {
   color: #1abc9c;
   font-family: "Roboto - Black", arial;
-font-weight: 700;
-letter-spacing: -0.6px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
 }
 
 .section-title {
@@ -119,10 +115,16 @@ letter-spacing: -0.6px;
 }
 
 .slider {
-  width: 1140px;
-  height: 600px;
-  margin: auto;
+  background-image: url("../img/slide4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-wrapper {
   position: relative;
+  height: 600px;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .slider-ctrl {
@@ -159,10 +161,6 @@ button:hover {
   background-image: url("../img/next.png");
 }
 
-.slide {
-  position: relative;
-}
-
 .slide-copy {
   width: 730px;
   margin: 0;
@@ -178,11 +176,11 @@ button:hover {
   padding: 0;
   color: #ffffff;
   font-family: "Roboto - Black", arial;
-font-size: 60px;
-font-weight: 700;
-letter-spacing: -1.8px;
-line-height: 82px;
-text-align: left;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  line-height: 82px;
+  text-align: left;
 }
 
 .slide-text {
@@ -190,11 +188,11 @@ text-align: left;
   padding: 0;
   color: #ffffff;
   font-family: "Roboto Light", arial;
-font-weight: 300;
-letter-spacing: -0.48px;
-line-height: 54px;
-font-size: 24px;
-text-align: left;
+  font-weight: 300;
+  letter-spacing: -0.48px;
+  line-height: 54px;
+  font-size: 24px;
+  text-align: left;
 }
 
 .main-content {
@@ -217,41 +215,41 @@ text-align: left;
 }
 
 .content-tile:not(:last-child) {
-margin-right: 30px;
+  margin-right: 30px;
 }
 
 .name {
-width: 200px;
-color: #ffffff;
-font-family: "Roboto - Black", arial;
-font-size: 18px;
-font-weight: 400;
-line-height: 40px;
-text-transform: uppercase;
-letter-spacing: -0.36px;
-background-color: #323232;
-text-align: left;
-height: 40px;
-padding-left: 10px;
-padding-right: -10px;
-position: absolute;
-bottom: 0;
+  width: 200px;
+  color: #ffffff;
+  font-family: "Roboto - Black", arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+  background-color: #323232;
+  text-align: left;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: -10px;
+  position: absolute;
+  bottom: 0;
 }
 
 .price {
   width: 55px;
   color: #ffffff;
-font-family: "Roboto - Black", arial;
-font-size: 18px;
-font-weight: 400;
-line-height: 40px;
-text-transform: uppercase;
-letter-spacing: -0.36px;
-background-color: #8c8c8c;
-height: 40px;
-position: absolute;
-right: 0;
-bottom: 0;
+  font-family: "Roboto - Black", arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+  background-color: #8c8c8c;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .content-tile:hover .price {
@@ -272,7 +270,7 @@ bottom: 0;
   opacity: 0;
 }
 
-.content-tile:hover > .overlay {
+.content-tile:hover>.overlay {
   opacity: 1;
 }
 
@@ -283,7 +281,7 @@ bottom: 0;
   border-style: solid;
   width: 50px;
   height: 50px;
-  position:absolute;
+  position: absolute;
   background-repeat: no-repeat;
   background-size: contein;
   background-position: center;
@@ -299,7 +297,6 @@ bottom: 0;
   background-image: url("../img/like.png");
   top: 80px;
   left: 34px;
-
 }
 
 .arrow {
@@ -336,18 +333,18 @@ bottom: 0;
 
 .footer {
   background-color: #323232;
+  width: 100%;
 }
 
-
 .copyrights, .developed-by {
-color: #fefefe;
-font-family: "Open Sans";
-font-size: 16px;
-font-weight: 400;
-line-height: 88px;
-letter-spacing: -0.32px;
+  color: #fefefe;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: -0.32px;
 }
 
 .developed-by {
-color: #46bfa9; 
+  color: #46bfa9;
 }

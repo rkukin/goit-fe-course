@@ -14,9 +14,8 @@
 </head>
 
 <body>
-  <div class="wrapper">
   <header>
-    <nav class="navigation clearfix">
+    <nav class="navigation clearfix wrapper">
       <a class="logo" href="#">mart</a>
       <ul class="main-menu clearfix">
         <li class="menu-item"><a href="#" class="menu-item-link">home</a></li>
@@ -30,70 +29,74 @@
   </header>
   <main>
     <div class="slider">
-      <button class="slider-ctrl prev"></button>
-      <button class="slider-ctrl next"></button>
-      <ul class="slides">
-        <li class="slide">
-          <img class="slide-img" src="img/slide4.png" alt="slide" height="600" width="1600">
-          <div class="slide-copy">
-          <h2 class="slide-title">AFFORDABLE PARIS TOURS</h2>
-          <p class="slide-text">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-        </div>
-        </li>
-      </ul>
+      <div class="slider-wrapper">
+        <button class="slider-ctrl prev"></button>
+        <button class="slider-ctrl next"></button>
+        <ul class="slides">
+          <li class="slide">
+            <div class="slide-copy">
+              <h2 class="slide-title">AFFORDABLE PARIS TOURS</h2>
+              <p class="slide-text">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
     <section class="main-content">
-      <h3 class="section-title">NEW COLLECTION</h3>
-      <article class="content-tile">
-        <img class="product-img" src="img/category-2.png" alt="tile image">
-        <div class="overlay">
+      <div class="wrapper">
+        <h3 class="section-title">NEW COLLECTION</h3>
+        <article class="content-tile">
+          <img class="product-img" src="img/category-2.png" alt="tile image">
+          <div class="overlay">
             <button class="overlay-button like"></button>
             <button class="overlay-button arrow"></button>
             <button class="overlay-button clock"></button>
             <button class="overlay-button cart">Add to cart</button>
-        </div>
-        <p class="name">Blue Tshirt</p>
-        <p class="price">$26</p>
-      </article>
-      <article class="content-tile">
+          </div>
+          <p class="name">Blue Tshirt</p>
+          <p class="price">$26</p>
+        </article>
+        <article class="content-tile">
           <img class="product-img" src="img/category-1.png" alt="tile imagegit ">
           <div class="overlay">
-              <button class="overlay-button like"></button>
+            <button class="overlay-button like"></button>
             <button class="overlay-button arrow"></button>
             <button class="overlay-button clock"></button>
             <button class="overlay-button cart">Add to cart</button>
-        </div>
+          </div>
           <p class="name">WOMAN shirt</p>
           <p class="price">$31</p>
-      </article>
-      <article class="content-tile">
+        </article>
+        <article class="content-tile">
           <img class="product-img" src="img/category-4.png" alt="tile image">
           <div class="overlay">
             <button class="overlay-button like"></button>
             <button class="overlay-button arrow"></button>
             <button class="overlay-button clock"></button>
             <button class="overlay-button cart">Add to cart</button>
-        </div>
+          </div>
           <p class="name">YELLOW Tshirt</p>
           <p class="price">$21</p>
-      </article>
-      <article class="content-tile">
+        </article>
+        <article class="content-tile">
           <img class="product-img" src="img/category-3.png" alt="tile image">
           <div class="overlay">
-              <button class="overlay-button like"></button>
+            <button class="overlay-button like"></button>
             <button class="overlay-button arrow"></button>
             <button class="overlay-button clock"></button>
             <button class="overlay-button cart">Add to cart</button>
-        </div>
+          </div>
           <p class="name">Cool lingerie</p>
           <p class="price">$56</p>
-      </article>
+        </article>
+      </div>
     </section>
   </main>
-  <footer class="footer">
-    <p class="copyrights">All Rights Reserved © Dokan | Designed <span class="developed-by" href="#">ThemenGraph</span></p>
+  <footer class="footer wrapper">
+    <p class="copyrights">All Rights Reserved © Dokan | Designed <span class="developed-by" href="#">ThemenGraph</span>
+    </p>
   </footer>
-</div>
+
 </body>
 
 </html>
