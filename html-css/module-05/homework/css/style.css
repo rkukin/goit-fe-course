@@ -217,7 +217,7 @@ text-align: left;
 }
 
 .content-tile:not(:last-child) {
-margin-right: 30px;
+margin-right: 40px;
 }
 
 .name {
