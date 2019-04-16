@@ -228,20 +228,23 @@ ul {
   box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
 }
 
+.social-tile {
+  margin: auto 0;
+}
+
+.social-link:not(:last-child) {
+  border-right: solid 1px #f38181;
+}
+
 .social-link {
   width: 56px;
   height: 56px;
   background-color: #fce38a;
-  margin: auto 0;
   background-repeat: no-repeat;
   background-position: center;
   transition-property: background-color;
   transition-timing-function: linear;
   transition-duration: .2s;
-}
-
-.social-link:not(:last-child) {
-  border-right: solid 1px #f38181;
 }
 
 .facebook {
@@ -262,7 +265,6 @@ ul {
 
 .social-link:hover {
   background-color: #95e1d3;
-  cursor: pointer;
 }
 
 .footer {
