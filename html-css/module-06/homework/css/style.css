@@ -1,5 +1,5 @@
-*,
-*::before,
+*, 
+*::before, 
 *::after {
   box-sizing: inherit;
   /* font-size: 0; */
@@ -91,21 +91,41 @@ ul {
   justify-content: space-around;
 }
 
-
-.service-content::before {
+.service::before {
   content: "";
   width: 83px;
   height: 67px;
-  /* background-color: #95e1d3; */
   flex-shrink: 0;
   background-repeat: no-repeat;
+}
+
+.alarm::before {
   background-image: url('../img/icons/ALARM.png');
+}
+
+.chart::before {
+  background-image: url('../img/icons/LINE_GRAPH.png');
+}
+
+.computer::before {
+  background-image: url('../img/icons/_OK.png');
+}
+
+.book::before {
+  background-image: url('../img/icons/BOOK_2.png');
+}
+
+.house::before {
+  background-image: url('../img/icons/HOME.png');
+}
+
+.square::before {
+  background-image: url('../img/icons/IMAGE.png');
 }
 
 .service {
   width: 383px;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .service:not(:nth-last-child(-n+3)) {
@@ -113,6 +133,7 @@ ul {
 }
 
 /* TODO: fix layout */
+
 .service-content {
   display: flex;
   flex-direction: column;
@@ -123,18 +144,18 @@ ul {
   padding: 0;
   margin-bottom: 20px;
   color: #333333;
-font-family: 'Montserrat';
-font-size: 14px;
-font-weight: 400;
-text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .service-description {
   color: #999999;
-font-family: Roboto;
-font-size: 15px;
-font-weight: 400;
-line-height: 24px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .team .section-title::before {
@@ -156,12 +177,7 @@ line-height: 24px;
   justify-content: space-between;
 }
 
-.teammate-photo {
-  margin-bottom: 30px;
-}
-
-.teammate-name,
-.teammate-position {
+.teammate-name, .teammate-position {
   text-align: center;
   padding: 0;
   margin: 0;
@@ -182,15 +198,77 @@ line-height: 24px;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-
 }
 
 .team {
   margin-bottom: 80px;
 }
 
-.teammate-photo:hover {
-  /* Все эффекты hover сделать используя CSS-переходы, длительность 200ms, функция распеределения времени linear. */
+.overlay-block {
+  position: relative;
+  margin-bottom: 30px;
+  width: 380px;
+  height: 470px;
+}
+
+.overlay {
+  width: 380px;
+  height: 470px;
+  display: flex;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  opacity: 0;
+  justify-content: center;
+  top: 0;
+  transition-property: opacity, transform, box-shadow;
+  transition-timing-function: linear;
+  transition-duration: .2s;
+}
+
+.overlay-block:hover>.overlay {
+  opacity: 1;
+}
+
+.overlay-block:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
+}
+
+.social-link {
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  margin: auto 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  transition-duration: .2s;
+}
+
+.social-link:not(:last-child) {
+  border-right: solid 1px #f38181;
+}
+
+.facebook {
+  background-image: url('../img/icons/facebook.png');
+}
+
+.twitter {
+  background-image: url('../img/icons/twitter.png');
+}
+
+.pinterest {
+  background-image: url('../img/icons/pinterest.png');
+}
+
+.instagram {
+  background-image: url('../img/icons/instagram.png');
+}
+
+.social-link:hover {
+  background-color: #95e1d3;
+  cursor: pointer;
 }
 
 .footer {
