@@ -1,5 +1,5 @@
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: inherit;
   /* font-size: 0; */
@@ -171,7 +171,8 @@ ul {
   justify-content: space-between;
 }
 
-.teammate-name, .teammate-position {
+.teammate-name,
+.teammate-position {
   text-align: center;
   padding: 0;
   margin: 0;
