@@ -6,12 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>module-07</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/fonts.css"> -->
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,7 +16,7 @@
     <div class="logo"><a href="#" class="logo-link">Golden</a></div>
     <nav class="navigation">
       <ul class="main-menu">
-        <li class="menu-item"><a href="#">home</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">home</a></li>
         <li class="menu-item"><a href="#" class="menu-link">service</a></li>
         <li class="menu-item"><a href="#" class="menu-link">portfolio</a></li>
         <li class="menu-item"><a href="#" class="menu-link">about</a></li>
@@ -31,7 +26,8 @@
   </header>
   <main class="content">
     <section class="services wrapper">
-      <h2 class="section-heading">Services<span class="subheading">Proin iaculis purus consequat sem cure.</span></h2>
+      <h2 class="section-heading">Services</h2>
+      <h3 class="subheading">Proin iaculis purus consequat sem cure.</h3>
       <div class="services-content">
         <div class="service-tile ecommerce">
           <h3 class="service-title">E-Commerce</h3>
@@ -55,11 +51,19 @@
     </section>
     <section class="contact-us">
       <div class="wrapper">
-        <h2 class="section-heading">Contact us<span class="subheading">Proin iaculis purus consequat sem cure.</span>
-        </h2>
-        <div class="contact-us-form" type="form">
-          
-        </div>
+        <h2 class="section-heading">Contact us</h2>
+        <h3 class="subheading">Proin iaculis purus consequat sem cure.</h3>
+        <form class="contact-us-form" action="#">
+          <div class="form-content">
+            <div class="form-column">
+              <input class="form-input name" type="text" name="name" required placeholder="your name *">
+              <input class="form-input email" type="email" name="email" required placeholder="your e-mail *">
+              <input class="form-input subject" type="text" name="subject" placeholder="subject">
+            </div>
+            <textarea class="form-input message" name="message" id="message" required placeholder="your message *"></textarea>
+          </div>
+          <button class="send-message">send message</button>
+        </form>
       </div>
     </section>
   </main>

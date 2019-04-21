@@ -27,6 +27,16 @@ ul {
   margin-bottom: 120px;
 }
 
+.logo-link {
+  text-decoration: none;
+  font-family: "Wisdom - Script";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 41px;
+  color: #fed136;
+  letter-spacing: 1.3px;
+}
+
 .main-menu {
   display: flex;
   min-width: 480px;
@@ -34,14 +44,40 @@ ul {
   flex-wrap: wrap;
 }
 
+.menu-link {
+  color: #222222;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  color: #fed136;
+}
+
 .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  color: #222222;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .subheading {
-  display: block;
+  padding: 0;
   padding-top: 14px;
+  color: #777777;
+  font-family: 'Droid Serif';
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .services-content {
@@ -68,32 +104,118 @@ ul {
 }
 
 .ecommerce::before {
-  background-image: url(../img/Icon-Basket.png);
+  background-image: url('../img/Icon-Basket.png');
 }
 
 .resp-web::before {
-  background-image: url(../img/Icon-Laptop.png);
+  background-image: url('../img/Icon-Laptop.png');
 }
 
 .web-sec::before {
-  background-image: url(../img/Icon-Locked.png);
+  background-image: url('../img/Icon-Locked.png');
 }
 
 .service-title {
   margin-bottom: 18px;
+  color: #222222;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  margin-bottom: 14px;
+}
+
+.service-text {
+  color: #777777;
+  font-family: 'Roboto Slab';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  line-height: 19px;
 }
 
 .contact-us {
   background-color: #222222;
-  background-image: url(../img/Map\ Image.png);
+  background-image: url('../img/Map\ Image.png');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 120px;
-
+  padding-bottom: 114px;
 }
 
 .contact-us .section-heading {
   padding-top: 110px;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
+.form-content {
+  display: flex;
+  width: 940px;
+  justify-content: space-between;
+}
 
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+}
+
+.form-column>.form-input {
+  height: 50px;
+}
+
+.form-input::placeholder {
+  color: #bbbbbb;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.35px;
+}
+
+.form-input {
+  border-radius: 3px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.form-input:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.message {
+  width: 455px;
+  padding-top: 14px;
+}
+
+.send-message {
+  display: block;
+  margin: 30px auto 0;
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.send-message:hover {
+  cursor: pointer;
+}
+
+.form-input:valid {
+  outline-color: green;
+}
+
+.form-input:invalid {
+  outline-color: red;
+}
