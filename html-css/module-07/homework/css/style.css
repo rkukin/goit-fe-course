@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -79,10 +77,13 @@ ul {
   margin-bottom: 80px;
 }
 
+.services {
+  padding-bottom: 120px;
+}
+
 .services-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120px;
 }
 
 .service-tile {
