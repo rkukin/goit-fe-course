@@ -1,0 +1,86 @@
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 280px;
+  }
+  .banner {
+    min-height: 540px;
+  }
+  .header {
+    min-height: 170px;
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+  .banner-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .banner-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .partners-section-title {
+    margin-bottom: 15px;
+  }
+  .partner-tile:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 670px;
+  }
+  .banner {
+    min-height: 700px;
+  }
+  .header {
+    padding-top: 40px;
+    flex-direction: row;
+    margin-bottom: 152px;
+  }
+  .banner-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+  .banner-desc {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+  .banner-button {
+    max-width: 226px;
+    margin: 0 auto;
+  }
+  .partners-section-title {
+    margin-bottom: 32px;
+  }
+  .partners-list {
+    max-width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  .partner-tile {
+    max-width: 210px;
+  }
+  .partner-tile:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+  .see-other-partners-button {
+    max-width: 194px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 940px) {
+  .wrapper {
+    max-width: 940px;
+  }
+
+  .partners-list {
+    max-width: initial;
+  }
+}
