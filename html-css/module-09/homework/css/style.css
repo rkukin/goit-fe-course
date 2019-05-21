@@ -85,7 +85,7 @@ ul {
   font-weight: 700;
   line-height: 40px;
   border-radius: 20px;
-  max-width: 230px;
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -169,6 +169,7 @@ ul {
 .partner-tile {
   margin: 0 auto;
 }
+
 .partners-list {
   margin-bottom: 30px;
 }
@@ -183,6 +184,8 @@ ul {
   line-height: 40px;
   border-radius: 20px;
   box-sizing: border-box;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .partners-section {
