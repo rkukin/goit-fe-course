@@ -13,10 +13,6 @@ ul {
   list-style: none;
 }
 
-/* .wrapper {
-  margin: 0 auto;
-}
-
 .banner {
   background-image: url('../img/Vector_Smart_Object_tablet_desktop.png');
   background-color: rgba(0, 0, 0, 0.8);
@@ -89,6 +85,8 @@ ul {
   font-weight: 700;
   line-height: 40px;
   border-radius: 20px;
+  max-width: 230px;
+  margin: 0 auto;
 }
 
 .partners-section-title {
@@ -105,6 +103,7 @@ ul {
   height: 120px;
   margin-bottom: 20px;
   position: relative;
+  box-sizing: content-box;
 }
 
 .image-wrapper::after {
@@ -167,6 +166,9 @@ ul {
   font-weight: 300;
 }
 
+.partner-tile {
+  margin: 0 auto;
+}
 .partners-list {
   margin-bottom: 30px;
 }
@@ -185,4 +187,4 @@ ul {
 
 .partners-section {
   padding: 70px 0;
-} */
+} 
