@@ -208,7 +208,7 @@ ul {
 }
 
 .computer::before {
-  background-image: url('../img/icons/_OK.png');
+  background-image: url('../img/icons/OK.png');
 }
 
 .book::before {
