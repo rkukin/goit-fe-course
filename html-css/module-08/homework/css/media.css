@@ -59,8 +59,7 @@
     max-width: 460px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 0;
     justify-content: space-between;
   }
   .partner-tile {
