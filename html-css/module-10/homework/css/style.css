@@ -27,7 +27,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .banner-content {
@@ -168,7 +168,6 @@ ul {
 }
 
 .services-list {
-  margin-bottom: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +212,7 @@ ul {
 }
 
 .service {
-  max-width: 383px;
+  max-width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,6 +255,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -285,8 +285,8 @@ ul {
   line-height: 24px;
 }
 
-.team {
-  margin-bottom: 80px;
+.section {
+  margin-bottom: 100px;
 }
 
 .overlay-block {
