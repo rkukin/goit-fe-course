@@ -123,30 +123,19 @@ ul {
   transition-timing-function: linear;
 }
 
-.icon {
+.menu-link svg {
   width: 18px;
   height: 18px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  background-repeat: no-repeat;
-  background-position-x: center;
-}
-
-.icon:hover {
-  fill: #fce38a;
-}
-
-.cart {
-  background-image: url('../img/icons/SHOPPING\ CART\ SVG.svg')
-}
-
-.search {
-  background-image: url('../img/icons/MAGNIFYING\ GLASS\ SVG.svg')
+  fill: #ffffff;
 }
 
 .menu-link:hover {
   color: #fce38a;
   border-bottom: solid;
+}
+
+.menu-link:hover svg {
+  fill: #fce38a;
 }
 
 .section-title {
