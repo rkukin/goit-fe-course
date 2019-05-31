@@ -1,41 +1,43 @@
-link
-list
-wrapper
+link+
+list+
+wrapper+
 
-banner
-header
-  header__logo
-navigation
-  navigation__menu
-  navigation__item
-  navigation__link
-banner__content
-banner__subtitle
-banner__title
-banner__button
+banner +
+  banner__content +
+  banner__subtitle +
+  banner__title +
+  banner__link +
+header +
+  header__logo +
+navigation +
+  navigation__menu +
+  navigation__item +
+  navigation__link +
 
-section
-  section__title
-  section__subtitle
-  section__description
-services-list
-  service-list__block--alarm
-  service-list__block--chart
-  service-list__block--computer
-  service-list__block--book
-  service-list__block--house
-  service-list__block--square
-service-content
-  service-content__title
-  service-content__descr
-team-list
-team-tile
-  team-tile__name
-  team-tile__position
-  team-tile__overlay
-socials-list
-  social-list__item
-  social-list__item-link
+section +
+  section__title +
+  section__subtitle +
+  section__description +
+services-list +
+  service-list__block--alarm +
+  service-list__block--chart +
+  service-list__block--computer +
+  service-list__block--book +
+  service-list__block--house +
+  service-list__block--square +
+service-content +
+  service-content__title +
+  service-content__descr +
+team-list +
+team-tile +
+  team-tile__name +
+  team-tile__position +
+  team-tile__overlay +
+  team-tile__photo +
+socials-list +
+  social-list__overlay +
+  social-list__item +
+  social-list__item-link +
 
 footer
   footer__copyrights
