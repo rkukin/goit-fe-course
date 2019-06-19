@@ -7,18 +7,55 @@
   padding: 0;
 }
 
-a {
+.link {
   display: block;
   text-decoration: none;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.link-text {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.elem-text {
+ color: #999999;
+  font-family: "Roboto";
+  font-size: 15px;
+}
+
+.elem-title {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.general-title {
+  text-align: center;
+  font-family: 'Montserrat - bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.general-subtitle {
+  margin-bottom: 20px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
 }
 
 .banner {
@@ -30,52 +67,40 @@ ul {
   margin-bottom: 100px;
 }
 
-.banner-content {
+.banner__content {
   max-width: 820px;
   margin: 0 auto;
 }
 
-.banner-title {
+.banner__title {
   margin: 0;
-  text-align: center;
+  padding: 0;
   color: #ffffff;
-  font-family: 'Montserrat - bold', sans-serif;
-  text-transform: uppercase;
   margin-bottom: 120px;
   font-size: 150px;
   font-weight: bold;
   line-height: 0.933;
 }
 
-.banner-pretitle {
-  display: block;
-  margin-bottom: 20px;
-  color: #ffffff;
-  font-family: 'Kaushan Script', cursive;
-  font-weight: 400;
-  text-transform: none;
+.banner__subtitle {
+
   font-size: 72px;
   line-height: 1.2;
+  
 }
 
-.banner-link {
+.banner__link {
   width: 150px;
   height: 40px;
   border: none;
-  color: #ffffff;
   background-color: transparent;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
   margin-left: -6px;
   border: solid;
   border-color: #ffffff;
   margin: 0 auto;
-  display: block;
 }
 
-.logo {
+.header__logo {
   color: #ffffff;
   font-family: 'Montserrat - bold', sans-serif;
   font-size: 30px;
@@ -93,7 +118,7 @@ ul {
   margin-bottom: 200px;
 }
 
-.main-menu {
+.navigation__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,12 +130,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.menu-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
+.navigation__link {
   padding-bottom: 10px;
   -webkit-transition-property: color, border-bottom;
   -o-transition-property: color, border-bottom;
@@ -123,42 +143,34 @@ ul {
   transition-timing-function: linear;
 }
 
-.menu-link svg {
+.navigation__link svg {
   width: 18px;
   height: 18px;
   fill: #ffffff;
 }
 
-.menu-link:hover {
+.navigation__link:hover {
   color: #fce38a;
   border-bottom: solid;
 }
 
-.menu-link:hover svg {
+.navigation__link:hover svg {
   fill: #fce38a;
 }
 
-.section-title {
-  text-align: center;
-  color: #333333;
-  font-family: 'Montserrat - bold', sans-serif;
+.section__title {
+ text-align: center;
   font-size: 30px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 66px;
 }
 
-.section-pretitle {
-  display: block;
-  margin-bottom: 20px;
+.section__subtitle {  
   color: #333333;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: none;
 }
 
-.section-title::after {
+
+.section__title::after {
   content: "";
   display: block;
   height: 3px;
@@ -177,7 +189,7 @@ ul {
   justify-content: space-around;
 }
 
-.service::before {
+.service-list__block::before {
   content: "";
   width: 83px;
   height: 67px;
@@ -187,71 +199,60 @@ ul {
   background-position-x: center;
 }
 
-.alarm::before {
+.service-list__block--alarm::before {
   background-image: url('../img/icons/ALARM.png');
 }
 
-.chart::before {
+.service-list__block--chart::before {
   background-image: url('../img/icons/LINE_GRAPH.png');
 }
 
-.computer::before {
+.service-list__block--computer::before {
   background-image: url('../img/icons/OK.png');
 }
 
-.book::before {
+.service-list__block--book::before {
   background-image: url('../img/icons/BOOK_2.png');
 }
 
-.house::before {
+.service-list__block--house::before {
   background-image: url('../img/icons/HOME.png');
 }
 
-.square::before {
+.service-list__block--square::before {
   background-image: url('../img/icons/IMAGE.png');
 }
 
-.service {
+.service-list__block{
   max-width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.service:not(:nth-last-child(-n+3)) {
+.service-list__block:not(:nth-last-child(-n+3)) {
   margin-bottom: 100px;
 }
 
-.service-title {
+.service-content__title {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  color: #333333;
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
-.service-description {
-  color: #999999;
-  font-family: Roboto;
-  font-size: 15px;
+.service-content__descr {
   font-weight: 400;
   line-height: 24px;
 }
 
-.team-section-descr {
+.section__description {
   padding: 0 110px;
   margin-bottom: 100px;
-  font-size: 15px;
-  font-family: "Roboto";
-  color: rgb(152, 152, 152);
   line-height: 1.6;
   text-align: center;
 }
 
-.team-tiles {
+.team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,23 +262,19 @@ ul {
   justify-content: space-between;
 }
 
-.teammate-name,
-.teammate-position {
+.team-tile__name,
+.team-tile__position {
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
-.teammate-name {
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(54, 54, 54);
-  text-transform: uppercase;
+.team-tile__name {
   line-height: 1.2;
   margin-bottom: 15px;
 }
 
-.teammate-position {
+.team-tile__position {
   color: #999999;
   font-family: 'Roboto - Light Italic';
   font-size: 15px;
@@ -289,14 +286,14 @@ ul {
   margin-bottom: 100px;
 }
 
-.overlay-block {
+.team-tile__overlay {
   position: relative;
   margin-bottom: 30px;
   max-width: 380px;
   height: 470px;
 }
 
-.overlay {
+.social-list__overlay {
   width: 380px;
   height: 470px;
   display: -webkit-box;
@@ -325,11 +322,11 @@ ul {
   transition-duration: .2s;
 }
 
-.overlay-block:hover>.overlay {
+.team-tile__overlay:hover>.social-list__overlay {
   opacity: 1;
 }
 
-.overlay-block:hover {
+.team-tile__overlay:hover {
   -webkit-transform: translate(-10px, -10px);
   -ms-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
@@ -337,15 +334,15 @@ ul {
   box-shadow: 10px 10px 0px 0px rgba(149, 225, 211, 1);
 }
 
-.social-tile {
+.social-list__item {
   margin: auto 0;
 }
 
-.social-tile:not(:last-child) {
+.social-list__item:not(:last-child) {
   border-right: solid 1px #f38181;
 }
 
-.social-link svg {
+.social-list__item-link svg {
   width: 28px;
   height: 28px;
   fill: #f38181;
@@ -360,7 +357,7 @@ ul {
   transition-duration: .2s;
 }
 
-.social-link {
+.social-list__item-link {
   width: 56px;
   height: 56px;
   background-color: #fce38a;
@@ -384,11 +381,11 @@ ul {
   transition-duration: .2s;
 }
 
-.social-link:hover {
+.social-list__item-link:hover {
   background-color: #f38181;
 }
 
-.social-link:hover svg {
+.social-list__item-link:hover svg {
   fill: #e5e5e5;
 }
 
@@ -405,7 +402,7 @@ ul {
   border-color: #e5e5e5;
 }
 
-.copyrights {
+.footer__copyrights {
   margin: auto 0;
   color: #333333;
   font-family: 'Montserrat';
@@ -413,15 +410,16 @@ ul {
   font-weight: 400;
 }
 
-.dev-by {
+.footer__author {
+  display: inline;
   color: #f38181;
 }
 
-.subscribe-block {
+.subscription {
   margin: auto 0;
 }
 
-.email {
+.subscription__email-field {
   margin: 0;
   padding: 0 15px;
   width: 230px;
@@ -430,20 +428,15 @@ ul {
   background-color: #ffffff;
 }
 
-.subscribe {
+.subscription__button {
   width: 150px;
   height: 40px;
   background-color: #95e1d3;
   border: none;
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
   margin-left: -6px;
 }
 
-.email::-webkit-input-placeholder {
+.subscription__email-field::-webkit-input-placeholder {
   color: #cccccc;
   font-family: "Roboto - Light Italic";
   font-size: 15px;
@@ -451,7 +444,7 @@ ul {
   line-height: 24px;
 }
 
-.email:-ms-input-placeholder {
+.subscription__email-field:-ms-input-placeholder {
   color: #cccccc;
   font-family: "Roboto - Light Italic";
   font-size: 15px;
@@ -459,7 +452,7 @@ ul {
   line-height: 24px;
 }
 
-.email::-ms-input-placeholder {
+.emsubscription__email-fieldail::-ms-input-placeholder {
   color: #cccccc;
   font-family: "Roboto - Light Italic";
   font-size: 15px;
