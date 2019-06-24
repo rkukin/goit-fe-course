@@ -13,14 +13,17 @@
   transition-property: color, border-bottom;
   transition-duration: .2s;
   transition-timing-function: linear;
+
   svg {
     width: 18px;
     height: 18px;
     fill: $link-text-color;
   }
+
   &:hover {
     color: $link-hover-color;
     border-bottom: solid;
+
     svg {
       fill: $link-hover-color;
     }

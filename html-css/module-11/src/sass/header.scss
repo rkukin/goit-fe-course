@@ -1,11 +1,11 @@
-.header__logo {
-  color: $link-text-color;
-  font-family: $monserat-bold;
-  font-size: 30px;
-  font-weight: 900;
-}
-
 .header {
+  &__logo {
+    color: $link-text-color;
+    font-family: $monserat-bold;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
