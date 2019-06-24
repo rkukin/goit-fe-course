@@ -1,0 +1,104 @@
+.footer {
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid;
+  border-top-width: 1px;
+  border-color: $footer-elements-color;
+
+  &__copyrights {
+    margin: auto 0;
+    color: $title-text-color;
+    font-family: $monserat;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__author {
+    display: inline;
+    color: $section-line-color;
+  }
+}
+
+// .footer__copyrights {
+//   margin: auto 0;
+//   color: $title-text-color;
+//   font-family: $monserat;
+//   font-size: 14px;
+//   font-weight: 400;
+// }
+
+// .footer__author {
+//   display: inline;
+//   color: $section-line-color;
+// }
+
+.subscription {
+  margin: auto 0;
+
+  &__email-field {
+    margin: 0;
+    padding: 0 15px;
+    width: 230px;
+    height: 38px;
+    border: 1px solid $footer-elements-color;
+    background-color: $link-text-color;
+  }
+
+  &__button {
+    width: 150px;
+    height: 40px;
+    background-color: $team-tile-hover-bg;
+    border: none;
+    margin-left: -6px;
+  }
+}
+
+// .subscription__email-field {
+//   margin: 0;
+//   padding: 0 15px;
+//   width: 230px;
+//   height: 38px;
+//   border: 1px solid $footer-elements-color;
+//   background-color: #$link-text-color;
+// }
+
+// .subscription__button {
+//   width: 150px;
+//   height: 40px;
+//   background-color: #95e1d3;
+//   border: none;
+//   margin-left: -6px;
+// }
+
+// .subscription__email-field::-webkit-input-placeholder {
+//   color: #cccccc;
+//   font-family: "Roboto - Light Italic";
+//   font-size: 15px;
+//   font-weight: 400;
+//   line-height: 24px;
+// }
+
+// .subscription__email-field:-ms-input-placeholder {
+//   color: #cccccc;
+//   font-family: "Roboto - Light Italic";
+//   font-size: 15px;
+//   font-weight: 400;
+//   line-height: 24px;
+// }
+
+// .emsubscription__email-fieldail::-ms-input-placeholder {
+//   color: #cccccc;
+//   font-family: "Roboto - Light Italic";
+//   font-size: 15px;
+//   font-weight: 400;
+//   line-height: 24px;
+// }
+
+.email::placeholder {
+  color: $footer-elements-color;
+  font-family: "Roboto - Light Italic";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}

@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link-text {
+  color: $link-text-color;
+  font-family: $monserat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.elem-text {
+  color: $elem-text-color;
+  font-family: $roboto;
+  font-size: 15px;
+}
+
+.elem-title {
+  color: $title-text-color;
+  font-family: $monserat;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.general-title {
+  text-align: center;
+  font-family: $monserat-bold;
+  text-transform: uppercase;
+}
+
+.general-subtitle {
+  margin-bottom: 20px;
+  font-family: $kaushan-script;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+}

@@ -1,0 +1,28 @@
+.navigation__menu {
+  display: flex;
+  width: 620px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.navigation__link {
+  padding-bottom: 10px;
+  transition-property: color, border-bottom;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: $link-text-color;
+  }
+  &:hover {
+    color: $link-hover-color;
+    border-bottom: solid;
+    svg {
+      fill: $link-hover-color;
+    }
+  }
+}

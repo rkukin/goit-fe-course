@@ -1,0 +1,51 @@
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.service-list__block::before {
+  content: "";
+  width: 83px;
+  height: 67px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.service-list__block--alarm::before {
+  background-image: url('../images/ALARM.png');
+}
+
+.service-list__block--chart::before {
+  background-image: url('../images/LINE_GRAPH.png');
+}
+
+.service-list__block--computer::before {
+  background-image: url('../images/OK.png');
+}
+
+.service-list__block--book::before {
+  background-image: url('../images/BOOK_2.png');
+}
+
+.service-list__block--house::before {
+  background-image: url('../images/HOME.png');
+}
+
+.service-list__block--square::before {
+  background-image: url('../images/IMAGE.png');
+}
+
+.service-list__block {
+  max-width: 380px;
+  display: flex;
+}
+
+.service-list__block:not(:nth-last-child(-n+3)) {
+  margin-bottom: 100px;
+}
